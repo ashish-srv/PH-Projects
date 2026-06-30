@@ -3,6 +3,9 @@ name: Fetch ProofHub Tasks
 on:
   workflow_dispatch:   # manual trigger only
 
+permissions:
+  contents: write   # allows the bot to push commits back to the repo
+
 jobs:
   fetch-tasks:
     runs-on: ubuntu-latest
